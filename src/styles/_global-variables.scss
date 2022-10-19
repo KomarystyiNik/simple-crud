@@ -1,0 +1,7 @@
+$main-color: #002766;
+
+@mixin dark-background {
+  background-color: $main-color;
+  color: white;
+}
+

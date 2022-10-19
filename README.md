@@ -1,3 +1,37 @@
+# Simple CRUD application with API implementation
+(React.js and Typescript)
+The major functionality of the application:
+1. List of all items
+2. Creation of new item
+3. View details of the selected item
+4. Update specific item
+5. Delete an item
+
+For this test, we will use a dummy API provided by https://jsonplaceholder.typicode.com/. All
+relevant information you can find on https://jsonplaceholder.typicode.com/guide/.
+
+List of APIs that you will need for this test:
+1. Listing all items - GET - https://jsonplaceholder.typicode.com/posts
+2. Create a new item - POST - https://jsonplaceholder.typicode.com/posts
+3. Item description - GET - https://jsonplaceholder.typicode.com/posts/${id}
+4. Update item - PUT - https://jsonplaceholder.typicode.com/posts/${id}
+5.  Delete item - DELETE - https://jsonplaceholder.typicode.com/posts/${id}
+
+The application needs to have three pages/routes, a home, create, and one for item details.
+The home page needs to display a list of items provided by API (1.) and it should have a create
+button in the header. Clicking on create, the user should be redirected to create the page, with
+the form which he can create a new item from it. The form should contain a title and
+description (body) inputs. Clicking on the save button should create a new item and redirect
+the user to the home page.
+
+The second part is, that when the user clicks on the specified item from the home page list, it
+should be redirected to the details page and the router should look something like /details/1.
+On the details page, a new API should be called (3.) which will return data for a specific item
+that needs to be displayed inside a form. That page should also contain two buttons/icons one
+for update and the second for delete. The update should update the item using API (4.) with
+provided data from the form. The delete button should remove the item using API (5.) and when
+the item is removed, the user needs to be redirected to the home page.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,23 @@
+@import "src/styles/_global-variables.scss";
+
+
+.page-container {
+
+  .main {
+
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-color: white;
+
+    .page-content {
+      padding: 20px;
+      overflow-x: scroll;
+      min-width: 400px;
+    }
+
+    .text { 
+      color: black; 
+    }
+  }
+}
